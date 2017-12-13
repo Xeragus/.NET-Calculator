@@ -35,7 +35,7 @@
             this.btn4 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
@@ -127,17 +127,17 @@
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button6
+            // btn1
             // 
-            this.button6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.Location = new System.Drawing.Point(8, 224);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(35, 25);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "1";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.buttonClick);
+            this.btn1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn1.Location = new System.Drawing.Point(8, 224);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(35, 25);
+            this.btn1.TabIndex = 6;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.buttonClick);
             // 
             // btn2
             // 
@@ -361,7 +361,7 @@
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
@@ -370,6 +370,7 @@
             this.Controls.Add(this.btn7);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(230, 327);
             this.MinimumSize = new System.Drawing.Size(230, 327);
@@ -377,6 +378,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,7 +392,7 @@
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
